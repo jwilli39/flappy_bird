@@ -1,6 +1,5 @@
 # Instructions:
 
-# 1
 git clone https://github.com/jwilli39/flappy_bird.git
 
 cd flappy_bird
