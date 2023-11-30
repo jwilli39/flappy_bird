@@ -99,7 +99,7 @@ int main()
             clear_background();
             setup_background0();
 
-            // Deincrement num variable
+            // Decrement num variable
             num--;
 
             // Display GAME OVER! to user / Total Score
