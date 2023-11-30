@@ -1,4 +1,5 @@
-# Instructions: [Press/hold the A button to ascend, try to navigate through the obstacles]
+# Instructions: 
+# [Press/hold the A button to ascend, try to navigate through the obstacles]
 
 git clone https://github.com/jwilli39/flappy_bird.git
 
