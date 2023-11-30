@@ -1,13 +1,13 @@
 /*********************************************************************************************
+ *
+ * @date     ->  11-29-2023
+ *
+ * @author   ->  Josh Williams
  * 
- * @brief   Recreation of the 2013 "Flappy Bird" game.This file is set up similair to 
- *          the main in the collide.c file.
- * 
- * @details Press/hold the A button to ascend, try to navigate through the obstacles.
- * 
- * @date    11-29-2023
- * 
- * @author  Josh Williams
+ * @brief    ->  Recreation of the 2013 "Flappy Bird" game.This file is set up similair to 
+ *               the main in the collide.c file.
+ *
+ * @details  ->  Press/hold the A button to ascend, try to navigate through the obstacles.
  *
  *********************************************************************************************/
 
