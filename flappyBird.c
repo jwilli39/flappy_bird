@@ -277,35 +277,9 @@ void delay(unsigned int amount)
         ;
 }
 
-/* a sprite is a moveable image on the screen */
-// struct Sprite
-// {
-//     unsigned short attribute0;
-//     unsigned short attribute1;
-//     unsigned short attribute2;
-//     unsigned short attribute3;
-// };
-
 /* array of all the sprites available on the GBA */
 struct Sprite sprites[NUM_SPRITES];
 int next_sprite_index = 0;
-
-/* the different sizes of sprites which are possible */
-// enum SpriteSize
-// {
-//     SIZE_8_8,
-//     SIZE_16_16,
-//     SIZE_32_32,
-//     SIZE_64_64,
-//     SIZE_16_8,
-//     SIZE_32_8,
-//     SIZE_32_16,
-//     SIZE_64_32,
-//     SIZE_8_16,
-//     SIZE_8_32,
-//     SIZE_16_32,
-//     SIZE_32_64
-// };
 
 /* function to initialize a sprite with its properties, and return a pointer */
 struct Sprite *sprite_init(int x, int y, enum SpriteSize size,
@@ -495,40 +469,6 @@ void setup_sprite_image()
     /* load the image into sprite image memory */
     memcpy16_dma((unsigned short *)sprite_image_memory, (unsigned short *)koopa_data, (koopa_width * koopa_height) / 2);
 }
-
-/* a struct for the koopa's logic and behavior */
-// struct Koopa
-// {
-//     /* the actual sprite attribute info */
-//     struct Sprite *sprite;
-
-//     /* the x and y postion in pixels */
-//     int x, y;
-
-//     /* the koopa's y velocity in 1/256 pixels/second */
-//     int yvel;
-
-//     /* the koopa's y acceleration in 1/256 pixels/second^2 */
-//     int gravity;
-
-//     /* which frame of the animation he is on */
-//     int frame;
-
-//     /* the number of frames to wait before flipping */
-//     int animation_delay;
-
-//     /* the animation counter counts how many frames until we flip */
-//     int counter;
-
-//     /* whether the koopa is moving right now or not */
-//     int move;
-
-//     /* the number of pixels away from the edge of the screen the koopa stays */
-//     int border;
-
-//     /* if the koopa is currently falling */
-//     int falling;
-// };
 
 /* move the koopa left or right returns if it is at edge of the screen */
 int koopa_left(struct Koopa *koopa)
